@@ -1,0 +1,27 @@
+{
+  "name": "gview",
+  "version": "0.0.1",
+  "description": "viewer for directed acyclic graph",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d-band/gview.git"
+  },
+  "keywords": [
+    "graph",
+    "dag",
+    "viewer"
+  ],
+  "author": "d-band",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/d-band/gview/issues"
+  },
+  "homepage": "https://github.com/d-band/gview#readme",
+  "dependencies": {
+    "egraph": "^2.4.3"
+  }
+}
