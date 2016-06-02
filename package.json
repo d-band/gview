@@ -25,10 +25,12 @@
   },
   "homepage": "https://github.com/d-band/gview#readme",
   "dependencies": {
+    "babel-polyfill": "^6.9.1",
     "egraph": "^2.4.3"
   },
   "devDependencies": {
     "babel-preset-es2015-rollup": "^1.1.1",
+    "babel-preset-stage-0": "^6.5.0",
     "rollup": "^0.26.3",
     "rollup-plugin-babel": "^2.4.0",
     "rollup-plugin-commonjs": "^2.2.1",

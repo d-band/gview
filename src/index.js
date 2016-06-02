@@ -1,8 +1,10 @@
 'use strict';
 
+import 'babel-polyfill';
+
 import Graph from 'egraph/graph';
 import Layouter from 'egraph/layouter/sugiyama';
-import 'egraph/utils/accessor';
+
 import './hidpi-canvas';
 
 const rootDom = document.getElementById('root');
