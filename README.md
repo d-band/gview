@@ -1,4 +1,12 @@
 gview
 =====
 
-> working in progress
+> Fork from: [egraph](https://github.com/likr/egraph)
+
+```
+# Dev
+$ dool server
+
+# Build
+$ dool build
+```
