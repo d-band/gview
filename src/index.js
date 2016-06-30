@@ -163,8 +163,10 @@ export default class GView {
       y += this.layout.vertices[u].y;
       n++;
     }
-    let pt = this.ctx.transformedPoint(this.width / 2, this.height / 2);
-    this.ctx.translate(pt.x - x / n, pt.y - y / n);
+    if (n > 0) {
+      let pt = this.ctx.transformedPoint(this.width / 2, this.height / 2);
+      this.ctx.translate(pt.x - x / n, pt.y - y / n);
+    }
     this.ctx.save();
     this.render();
   }
