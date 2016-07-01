@@ -19,6 +19,20 @@ $ npm install gview
 ```
 var GView = require('gview');
 
+var data = {
+  vertices: [{
+    id: 1,
+    name: 'node-1'
+  }, {
+    id: 2,
+    name: 'node-2'
+  }],
+  edges: [{
+    from: 1,
+    to: 2
+  }]
+};
+
 var viewer = new GView('root', data, {
   width: 800,
   height: 400,
