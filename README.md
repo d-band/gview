@@ -12,5 +12,3 @@ $ dool build
 ```
 
 ![image](examples/img1.png)
-
-![image](examples/img2.png)
