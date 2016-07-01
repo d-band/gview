@@ -16,7 +16,9 @@
   "keywords": [
     "graph",
     "dag",
-    "viewer"
+    "viewer",
+    "canvas",
+    "sugiyama"
   ],
   "author": "d-band",
   "license": "MIT",
