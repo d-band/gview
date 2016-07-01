@@ -3,7 +3,7 @@
 var data = {
   vertices: [{
     id: 1,
-    name: 'node-1node-1\r\nnode-1node-1node-1'
+    name: 'node-1'
   }, {
     id: 2,
     name: 'node-2'
@@ -12,14 +12,15 @@ var data = {
     name: 'node-3'
   }, {
     id: 4,
-    name: 'node-4node-4\r\nnode-4node-4node-4node-4'
+    name: 'node-4'
   }, {
     id: 5,
     name: 'node-5',
     color: 'red'
   }, {
     id: 6,
-    name: 'node-6'
+    name: 'node-6',
+    color: 'blue'
   }, {
     id: 7,
     name: 'node-7'
@@ -53,10 +54,19 @@ var data = {
     to: 6
   }, {
     from: 7,
-    to: 1
+    to: 4
   }, {
     from: 1,
     to: 7
+  }, {
+    from: 9,
+    to: 5
+  }, {
+    from: 10,
+    to: 5
+  }, {
+    from: 3,
+    to: 6
   }]
 };
 
