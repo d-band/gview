@@ -1,13 +1,14 @@
 {
   "name": "gview",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "viewer for directed acyclic graph",
   "main": "dist/index.js",
   "entry": {
     "index": "./src/index.js"
   },
   "scripts": {
-    "build": "rm -rf dist && dool-build"
+    "build": "rm -rf dist && dool-build",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
