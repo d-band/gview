@@ -1,6 +1,6 @@
 {
   "name": "gview",
-  "version": "0.0.6",
+  "version": "1.0.0",
   "description": "viewer for directed acyclic graph",
   "main": "dist/index.js",
   "entry": {
