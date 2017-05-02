@@ -1,6 +1,8 @@
 gview
 =====
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/d-band/gview.svg)](https://greenkeeper.io/)
+
 > Fork from: [egraph](https://github.com/likr/egraph)
 
 [![NPM version](https://img.shields.io/npm/v/gview.svg)](https://www.npmjs.com/package/gview)
