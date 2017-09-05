@@ -17,9 +17,9 @@ $ npm install gview
 [Example](examples/)
 
 ```
-var GView = require('gview');
+import GView from 'gview';
 
-var data = {
+const data = {
   vertices: [{
     id: 1,
     name: 'node-1'
@@ -33,7 +33,7 @@ var data = {
   }]
 };
 
-var viewer = new GView('root', data, {
+const viewer = new GView('root', data, {
   width: 800,
   height: 400,
   hited: function(list) {
@@ -48,6 +48,8 @@ var viewer = new GView('root', data, {
 ## Develop
 
 ```
+npm i dool -g
+
 # Dev
 $ dool server
 
@@ -62,4 +64,4 @@ $ dool build
 
 ## License
 
-gview is available under the terms of the MIT License.
+Gview is available under the terms of the MIT License.
