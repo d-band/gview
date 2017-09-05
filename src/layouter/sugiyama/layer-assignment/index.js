@@ -1,4 +1,4 @@
-const LongestPath = require('./longest-path')
-const QuadHeuristic = require('./quad-heuristic')
+import LongestPath from './longest-path'
+import QuadHeuristic from './quad-heuristic'
 
-module.exports = {LongestPath, QuadHeuristic}
+export default { LongestPath, QuadHeuristic }

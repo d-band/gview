@@ -29,4 +29,4 @@ const connectedComponents = (graph) => {
   })
 }
 
-module.exports = connectedComponents
+export default connectedComponents;

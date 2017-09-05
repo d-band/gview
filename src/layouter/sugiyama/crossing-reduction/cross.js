@@ -1,4 +1,4 @@
-const layerMatrix = require('../misc/layer-matrix')
+import layerMatrix from '../misc/layer-matrix'
 
 const cross = function (g, h1, h2) {
   const n = h1.length
@@ -21,4 +21,4 @@ const cross = function (g, h1, h2) {
   return result
 }
 
-module.exports = cross
+export default cross

@@ -1,10 +1,10 @@
-const AbstractGraph = require('./abstract-graph')
+import AbstractGraph from './abstract-graph'
 
 const privates = new WeakMap()
 
 const p = (self) => privates.get(self)
 
-class MutableGraph extends AbstractGraph {
+export default class MutableGraph extends AbstractGraph {
   constructor () {
     super()
     privates.set(this, {
@@ -121,5 +121,3 @@ class MutableGraph extends AbstractGraph {
     return this
   }
 }
-
-module.exports = MutableGraph

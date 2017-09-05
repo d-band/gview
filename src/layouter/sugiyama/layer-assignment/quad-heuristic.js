@@ -1,5 +1,5 @@
-const accessor = require('../../../utils/accessor')
-const LongestPath = require('./longest-path')
+import accessor from '../../../utils/accessor'
+import LongestPath from './longest-path'
 
 const quadHeuristic = (g, repeat) => {
   const layers = new LongestPath().call(g)
@@ -74,4 +74,4 @@ class QuadHeuristic {
   }
 }
 
-module.exports = QuadHeuristic
+export default QuadHeuristic

@@ -1,4 +1,4 @@
-const accessor = require('../../../utils/accessor')
+import accessor from '../../../utils/accessor'
 
 const privates = new WeakMap()
 
@@ -23,4 +23,4 @@ class UserDefined {
   }
 }
 
-module.exports = UserDefined
+export default UserDefined

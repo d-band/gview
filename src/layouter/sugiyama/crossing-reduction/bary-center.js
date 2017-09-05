@@ -1,4 +1,4 @@
-const layerMatrix = require('../misc/layer-matrix')
+import layerMatrix from '../misc/layer-matrix'
 
 const baryCenter = (g, h1, h2, inverse = false) => {
   const centers = {}
@@ -33,4 +33,4 @@ const baryCenter = (g, h1, h2, inverse = false) => {
   }
 }
 
-module.exports = baryCenter
+export default baryCenter

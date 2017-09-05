@@ -8,4 +8,4 @@ const layerEdges = (g, h1, h2) => {
   return result
 }
 
-module.exports = layerEdges
+export default layerEdges

@@ -19,4 +19,4 @@ const groupLayers = (g, layers, allowEmptyLayer) => {
   }
 }
 
-module.exports = groupLayers
+export default groupLayers

@@ -1,6 +1,6 @@
-const markConflicts = require('./mark-conflicts')
-const verticalAlignment = require('./vertical-alignment')
-const horizontalCompaction = require('./horizontal-compaction')
+import markConflicts from './mark-conflicts'
+import verticalAlignment from './vertical-alignment'
+import horizontalCompaction from './horizontal-compaction'
 
 const sort = (xs) => {
   xs.sort((x1, x2) => x1 - x2)
@@ -105,4 +105,4 @@ class Brandes {
   }
 }
 
-module.exports = Brandes
+export default Brandes

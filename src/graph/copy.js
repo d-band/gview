@@ -1,4 +1,4 @@
-const Graph = require('./mutable-graph')
+import Graph from './mutable-graph'
 
 const copy = (g) => {
   const newGraph = new Graph()
@@ -11,4 +11,4 @@ const copy = (g) => {
   return newGraph
 }
 
-module.exports = copy
+export default copy

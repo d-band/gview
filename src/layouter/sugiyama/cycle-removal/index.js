@@ -1,3 +1,3 @@
-const CycleRemoval = require('./cycle-removal')
+import CycleRemoval from './cycle-removal'
 
-module.exports = {CycleRemoval}
+export { CycleRemoval }

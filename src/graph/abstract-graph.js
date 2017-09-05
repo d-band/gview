@@ -1,4 +1,4 @@
-class AbstractGraph {
+export default class AbstractGraph {
   edges () {
     const edges = []
     for (const u of this.vertices()) {
@@ -32,5 +32,3 @@ class AbstractGraph {
     return JSON.stringify(this.toJSON())
   }
 }
-
-module.exports = AbstractGraph

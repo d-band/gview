@@ -59,4 +59,4 @@ const horizontalCompaction = (g, layers, { rtol = false }) => {
   }
 }
 
-module.exports = horizontalCompaction
+export default horizontalCompaction

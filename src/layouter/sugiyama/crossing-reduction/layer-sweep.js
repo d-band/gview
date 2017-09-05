@@ -1,5 +1,5 @@
-const accessor = require('../../../utils/accessor')
-const baryCenter = require('./bary-center')
+import accessor from '../../../utils/accessor'
+import baryCenter from './bary-center'
 
 const privates = new WeakMap()
 
@@ -35,4 +35,4 @@ class LayerSweep {
   }
 }
 
-module.exports = LayerSweep
+export default LayerSweep

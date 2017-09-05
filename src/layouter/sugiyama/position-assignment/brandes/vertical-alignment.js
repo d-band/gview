@@ -1,4 +1,4 @@
-const median = require('../../misc/median')
+import median from '../../misc/median'
 
 const verticalAlignment = (g, layers, { rtol = false, btot = false }) => {
   const iterLayers = function * () {
@@ -53,4 +53,4 @@ const verticalAlignment = (g, layers, { rtol = false, btot = false }) => {
   }
 }
 
-module.exports = verticalAlignment
+export default verticalAlignment

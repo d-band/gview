@@ -1,3 +1,3 @@
-const Brandes = require('./brandes')
+import Brandes from './brandes'
 
-module.exports = {Brandes}
+export default { Brandes }

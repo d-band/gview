@@ -1,7 +1,7 @@
-const ImaiTreeLayouter = require('./imai-tree')
-const SugiyamaLayouter = require('./sugiyama')
+import ImaiTreeLayouter from './imai-tree'
+import SugiyamaLayouter from './sugiyama'
 
-module.exports = {
+export default {
   ImaiTreeLayouter,
   SugiyamaLayouter
 }

@@ -1,7 +1,5 @@
 'use strict';
 
-import './hidpi-canvas';
-
 import Graph from './graph';
 import Layouter from './layouter/sugiyama';
 import { CycleRemoval } from './layouter/sugiyama/cycle-removal';
@@ -29,10 +27,22 @@ export default class GView {
     this.data = data;
     this.root = document.getElementById(domId);
 
-    this.root.width = this.width;
-    this.root.height = this.height;
+    const ctx = this.root.getContext('2d');
+    const backingStore = ctx.webkitBackingStorePixelRatio ||
+      ctx.mozBackingStorePixelRatio ||
+      ctx.msBackingStorePixelRatio ||
+      ctx.oBackingStorePixelRatio ||
+      ctx.backingStorePixelRatio || 1;
+    const ratio = (window.devicePixelRatio || 1) / backingStore;
 
-    this.ctx = transform(this.root.getContext('2d'));
+    this.root.width = this.width * ratio;
+    this.root.height = this.height * ratio;
+    this.root.style.width = `${this.width}px`;
+    this.root.style.height = `${this.height}px`;
+
+    ctx.scale(ratio, ratio);
+
+    this.ctx = transform(ctx);
 
     this.buildGraph();
     this.buildLayout();

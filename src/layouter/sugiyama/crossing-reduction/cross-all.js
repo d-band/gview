@@ -1,4 +1,4 @@
-const cross = require('./cross')
+import cross from './cross'
 
 const crossAll = (g, h) => {
   let sum = 0
@@ -8,4 +8,4 @@ const crossAll = (g, h) => {
   return sum
 }
 
-module.exports = crossAll
+export default crossAll

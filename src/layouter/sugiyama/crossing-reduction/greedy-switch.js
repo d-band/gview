@@ -34,4 +34,4 @@ const greedySwitch = (g, h1in, h2in, inverse = false) => {
   } while (improve > 0)
 }
 
-module.exports = greedySwitch
+export default greedySwitch

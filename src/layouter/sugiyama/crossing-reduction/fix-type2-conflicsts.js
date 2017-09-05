@@ -1,4 +1,4 @@
-const layerMatrix = require('../misc/layer-matrix')
+import layerMatrix from '../misc/layer-matrix'
 
 const fixType2Conflicts = (g, layers) => {
   const dummy = {}
@@ -46,4 +46,4 @@ const fixType2Conflicts = (g, layers) => {
   }
 }
 
-module.exports = fixType2Conflicts
+export default fixType2Conflicts

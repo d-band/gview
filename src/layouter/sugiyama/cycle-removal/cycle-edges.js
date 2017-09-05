@@ -26,4 +26,4 @@ const cycleEdges = function (g) {
   return result
 }
 
-module.exports = cycleEdges
+export default cycleEdges

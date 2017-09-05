@@ -70,7 +70,7 @@ var data = {
   }]
 };
 
-var view = new GView('root', data, {
+var view = new GView.default('root', data, {
   hited: function(list) {
     console.log(list);
   }

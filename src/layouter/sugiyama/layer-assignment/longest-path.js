@@ -42,4 +42,4 @@ class LongestPath {
   }
 }
 
-module.exports = LongestPath
+export default LongestPath

@@ -6,4 +6,4 @@ const accessor = (self, privates, key, args) => {
   return self
 }
 
-module.exports = accessor
+export default accessor

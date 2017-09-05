@@ -1,4 +1,4 @@
-const layerEdges = require('../../misc/layer-edges')
+import layerEdges from '../../misc/layer-edges'
 
 const split = (x, f) => {
   const y = []
@@ -40,4 +40,4 @@ const markConflicts = (g, layers) => {
   }
 }
 
-module.exports = markConflicts
+export default markConflicts

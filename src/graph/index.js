@@ -1,1 +1,3 @@
-module.exports = require('./mutable-graph')
+import MutableGraph from './mutable-graph'
+
+export default MutableGraph

@@ -18,4 +18,4 @@ const crossingEdges = (g, h1, h2, u1, v1) => {
   return result
 }
 
-module.exports = crossingEdges
+export default crossingEdges

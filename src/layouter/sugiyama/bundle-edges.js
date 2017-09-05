@@ -49,4 +49,4 @@ const bundleEdges = (graph, layers, ltor) => {
   }
 }
 
-module.exports = bundleEdges
+export default bundleEdges

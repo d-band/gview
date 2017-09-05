@@ -38,4 +38,4 @@ const normalize = (g, layers, layerMap, edgeMargin, layerMargin) => {
   }
 }
 
-module.exports = normalize
+export default normalize

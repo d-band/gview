@@ -1,4 +1,4 @@
-const cycleEdges = require('./cycle-edges')
+import cycleEdges from './cycle-edges'
 
 const cycleRemoval = (g) => {
   for (const [u, v] of cycleEdges(g)) {
@@ -22,4 +22,4 @@ class CycleRemoval {
   }
 }
 
-module.exports = CycleRemoval
+export default CycleRemoval

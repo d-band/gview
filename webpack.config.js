@@ -1,6 +1,5 @@
-module.exports = function(cfg) {
-  cfg.output.library = 'GView';
-  cfg.output.libraryTarget = 'umd';
-  cfg.babel.plugins.push(require.resolve('babel-plugin-transform-runtime'));
-  return cfg;
+module.exports = function(config) {
+  config.output.library = 'GView';
+  config.output.libraryTarget = 'umd';
+  return config;
 }

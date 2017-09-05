@@ -1,4 +1,4 @@
-const Graph = require('../graph')
+import Graph from '../graph'
 
 const normalize = function (g, layers, edgeMargin) {
   var i, w1, w2
@@ -151,4 +151,4 @@ class ImaiTreeLayouter {
   }
 }
 
-module.exports = ImaiTreeLayouter
+export default ImaiTreeLayouter

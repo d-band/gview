@@ -1,12 +1,12 @@
-const Graph = require('../../graph')
-const accessor = require('../../utils/accessor')
-const connectedComponents = require('./misc/connected-components')
-const groupLayers = require('./misc/group-layers')
-const layerAssignment = require('./layer-assignment')
-const normalize = require('./normalize')
-const crossingReduction = require('./crossing-reduction')
-const positionAssignment = require('./position-assignment')
-const bundleEdges = require('./bundle-edges')
+import Graph from '../../graph'
+import accessor from '../../utils/accessor'
+import connectedComponents from './misc/connected-components'
+import groupLayers from './misc/group-layers'
+import layerAssignment from './layer-assignment'
+import normalize from './normalize'
+import crossingReduction from './crossing-reduction'
+import positionAssignment from './position-assignment'
+import bundleEdges from './bundle-edges'
 
 const initGraph = (gOrig, {ltor, vertexWidth, vertexHeight, edgeWidth, layerMargin, vertexMargin, vertexLeftMargin, vertexRightMargin, vertexTopMargin, vertexBottomMargin}) => {
   const g = new Graph()
@@ -142,7 +142,7 @@ const buildResult = (g, layers, ltor) => {
 
 const privates = new WeakMap()
 
-class SugiyamaLayouter {
+export default class SugiyamaLayouter {
   constructor () {
     privates.set(this, {
       vertexWidth: ({d}) => d.width,
@@ -265,5 +265,3 @@ class SugiyamaLayouter {
     return accessor(this, privates, 'positionAssignment', arguments)
   }
 }
-
-module.exports = SugiyamaLayouter

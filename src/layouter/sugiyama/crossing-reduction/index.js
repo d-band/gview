@@ -1,3 +1,3 @@
-const LayerSweep = require('./layer-sweep')
+import LayerSweep from './layer-sweep'
 
-module.exports = {LayerSweep}
+export default { LayerSweep }

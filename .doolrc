@@ -1,0 +1,6 @@
+{
+  entry: {
+    index: './src/index.js'
+  },
+  babelPlugins: ['transform-runtime']
+}
